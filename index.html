@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./app.js"></script>
+    <title>Bubble Sort Visualizer</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="header">
+      <h1>Bubble Sort Visualiser</h1>
+    </header>
+
+    <!-- The main Table -->
+    <div class="visualiser" id="visualiser"></div>
+
+    <!-- The ranges and button -->
+    <div class="inputs">
+      <div>
+        <label for="no-of-elems">No Of Elements</label>
+        <input type="range" min="6" max="100" value="20" class="slider" id="no-of-elems" />
+      </div>
+
+      <div>
+        <label for="sorting-speed">Sorting Speed</label>
+        <input type="range" min="3" max="2000" value="20" class="slider" id="sorting-speed" />
+      </div>
+
+      <div class="buttons">
+        <button id="sorting-btn">Bubble Sort Array</button>
+        <button id="randomize-btn">Randomize Array</button>
+      </div>
+    </div>
+  </body>
+</html>
